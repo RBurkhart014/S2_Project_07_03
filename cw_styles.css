@@ -51,33 +51,40 @@ nav#bottom ul {
         font-size: 2.2em;
         flex: 1 1 130px;
     }
-    ul li:nth-of-type(1) {
-        background: url(cw_image1.png) no-repeat;
+    nav#top ul li:nth-of-type(1) {
+        background: url(cw_image01.png) no-repeat;
         width: 100%;
     }
-    ul li:nth-of-type(2) {
-        background: url(cw_image2.png) no-repeat;
+    nav#top ul li:nth-of-type(2) {
+        background: url(cw_image02.png) no-repeat;
         width: 100%;
     }
-    ul li:nth-of-type(3) {
-        background: url(cw_image3.png) no-repeat;
+    nav#top ul li:nth-of-type(3) {
+        background: url(cw_image03.png) no-repeat;
         width: 100%;
     }
-    ul li:nth-of-type(4) {
-        background: url(cw_image4.png) no-repeat;
+    nav#top ul li:nth-of-type(4) {
+        background: url(cw_image04.png) no-repeat;
         width: 100%;
     }
-    ul li:nth-of-type(5) {
-        background: url(cw_image5.png) no-repeat;
+    nav#top ul li:nth-of-type(5) {
+        background: url(cw_image05.png) no-repeat;
         width: 100%;
     }
-    ul li:nth-of-type(6) {
-        background: url(cw_image6.png) no-repeat;
+    nav#top ul li:nth-of-type(6) {
+        background: url(cw_image06.png) no-repeat;
         width: 100%;
     }
-    ul li:nth-of-type(7) {
-        background: url(cw_image7.png) no-repeat;
-        width: 100%;
+    article p#links {
+        justify-content: space-around;
+        -webkit-flex-flow: row nowrap;
+        flex-flow: row nowrap;
+    }
+    p>a {
+        font: white;
+        background: rgb(220, 27, 27);
+        border-radius: 20px 10px;
+        text-decoration: none;
     }
 }	
 
@@ -87,4 +94,11 @@ nav#bottom ul {
 	Tablet and Desktop Devices: 481px or more 
    ============================================
 */
-
+@media only screen and (min-width: 481px) {
+    body {
+        -webkit-flex-flow: row wrap;
+        flex-flow: row wrap;  
+        display: -webkit-flex;
+        display: flex;
+    }
+}
